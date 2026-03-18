@@ -1,0 +1,413 @@
+/* css Zen Garden submission 201 - 'Lily Pond', by Rose Thorogood, http://tulips4rose.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Rose Thorogood */
+/* Added: December 11th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */   
+
+
+
+
+/* --- LAYOUT ---------------------------------- */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #421d42 url(images/bg.gif);
+	color: #000000;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.7em;
+}
+
+
+.page-wrapper {
+	width: 750px;
+	height: 1335px;
+}
+
+
+header {
+	width: 250px;
+	height: 625px;
+	background: url('bat4.png') no-repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 350px;
+	left: 250px;
+	z-index: 0;
+}
+
+.summary {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: relative;
+	top: 350px;
+	left: 250px;
+	z-index: 1;
+}
+	.summary p:first-child {
+	display: none;
+	}
+		.summary p:last-child {
+			width: 425px;
+			margin-top: 0px;
+			margin-left: 0px;
+			position: absolute;
+			top: -18px;
+			left: -250px;
+		z-index: 2;
+		}
+
+.preamble {
+	width: 500px;
+	height: 350px;
+	background: #471c47 url('bat1\ copy.png');
+	margin-top: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+.explanation {
+	width: 250px;
+	height: 490px;
+	background: #a690af url('bat6.png');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 0px;
+	left: 500px;
+}
+
+.participation {
+	width: 250px;
+	height: 485px;
+	background: #a690af url('bat7.png');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 490px;
+	left: 500px;
+}
+
+.benefits {
+	width: 250px;
+	height: 230px;
+	background: #85a3c2 url('bat2.png');
+	margin-top: 0px;
+	position: absolute;
+	top: 350px;
+}
+
+.requirements {
+	width: 250px;
+	height: 755px;
+	background: #85a3c2 url('bat3.png');
+	margin-top: 0px;
+	position: absolute;
+	top: 580px;
+}
+
+footer {
+	width: 500px;
+	height: 20px;
+	background: #336699 url('bg-footer.gif');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 1280px;
+	left: 250px;
+}
+
+.sidebar {
+	width: 500px;
+	height: 305px;
+	background: #336699 url('bat5.png');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 975px;
+	left: 250px;
+}
+
+.design-selection {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	position: absolute;
+	bottom: -5px;
+	left: 10px;
+	width: 300px;
+}
+
+.design-archives {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 30px;
+	left: 290px;
+}
+
+.zen-resources {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 180px;
+	left: 290px;
+}
+
+
+/* --- FORMATTING HEADINGS --------------------- */
+
+h1, h2, h3{
+	visibility: hidden;
+}
+
+.explanation h3 {
+	background-image: url('heading-about.gif');
+	width: 250px;
+	height: 100px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.participation h3 {
+	background-image: url('heading-participation.gif');
+	width: 250px;
+	height: 50px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.benefits h3 {
+	background-image: url('heading-benefits.gif');
+	width: 250px;
+	height: 60px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.requirements h3 {
+	background-image: url('heading-requirements.gif');
+	width: 250px;
+	height: 50px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.design-selection h3 {
+	display: none;
+}
+
+.design-archives h3 {
+	display: none;
+}
+
+.zen-resources h3 {
+	display: none;
+}
+
+
+/* --- FORMATTING TEXT ------------------------- */
+
+p {
+	padding: 0 15px 0 15px;
+}
+
+.preamble p:nth-child(2) {
+	margin-top: -20px;
+}
+
+.preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4) {
+	color: #ffffff;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.supporting {
+	background-color: #341256;
+}
+
+.summary p:first-child {
+	display: none;
+	}
+
+.summary p:last-child {
+	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	padding: 0;
+}
+
+.benefits, .requirements {
+	color: #ffffff;
+}
+
+.requirements p:nth-child(6) {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 720px;
+	left: 250px;
+	width: 420px;
+	height: 30px;
+	font-size: .9em;
+	background-color: #ffffff;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 40px 0 40px;
+	}
+
+footer {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+abbr {
+	font-weight: bold;
+	border-bottom: 1px dotted #ffffff;
+	}
+	
+.summary abbr {
+	font-weight: bold;
+	border-bottom: 1px dotted #339999;
+	}
+	
+
+/* --- FORMATTING NAVIGATION ------------------- */
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #336699;
+	text-decoration: underline;
+}
+
+.summary a {
+	color: #339999;
+	text-decoration: none;
+}
+
+.summary a:hover {
+	color: #336699;
+	text-decoration: underline;
+}
+
+.explanation a:hover, .participation a:hover {
+	color: #770e77;
+}
+
+.requirements p:nth-child(6) a {
+	color: #336699;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.requirements p:nth-child(6) a:hover {
+	color: #339999;
+	text-decoration: underline;
+}
+
+footer a {
+	font-weight: bold;
+}
+
+.sidebar a, footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.sidebar a:hover, footer a:hover {
+	background-color: #ffffff;
+	color: #471c47;
+	text-decoration: underline;
+}
+
+.design-selection a {
+	font-weight: bold;
+}
+
+.design-selection a.designer-name {
+	font-weight: normal;
+}
+
+li {
+	padding-bottom: 3px;
+	list-style: none;
+}
+
+/* --- ANIMATIONS: Falling Flowers & Flying Butterfly --- */
+
+/* 1. Keyframes for the Falling Effect */
+@keyframes flowerFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% {
+        transform: translateY(1400px) rotate(450deg);
+        opacity: 0;
+    }
+}
+
+/* 2. Keyframes for the Butterfly Flight Path */
+@keyframes butterflyPath {
+    0% { transform: translate(-100px, 100px) rotate(10deg); }
+    25% { transform: translate(300px, 50px) rotate(-10deg); }
+    50% { transform: translate(600px, 200px) rotate(20deg); }
+    75% { transform: translate(300px, 400px) rotate(-5deg); }
+    100% { transform: translate(-100px, 600px) rotate(10deg); }
+}
+
+/* 3. Flower Styling (3 different flowers) */
+.page-wrapper::before, 
+.page-wrapper::after,
+.sidebar::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    /* This is a simple pink flower shape via SVG */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e8a4d8"><path d="M12,2L14.39,7.61L20,8.45L15.5,12.22L16.92,18L12,14.77L7.08,18L8.5,12.22L4,8.45L9.61,7.61L12,2Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+    pointer-events: none;
+}
+
+/* Positioning and timing for each flower */
+.page-wrapper::before { left: 15%; animation: flowerFall 12s linear infinite; }
+.page-wrapper::after { left: 45%; animation: flowerFall 18s linear infinite; animation-delay: 4s; }
+.sidebar::before { left: 80%; animation: flowerFall 15s linear infinite; animation-delay: 2s; }
+
+/* 4. Butterfly Styling */
+header::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* This is a blue butterfly shape via SVG */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2385a3c2"><path d="M12,10C12,10 13,3 19,3C21,3 22,5 21,7C20,9 15,10 13,11C15,12 20,13 21,15C22,17 21,19 19,19C13,19 12,12 12,12C12,12 11,19 5,19C3,19 2,17 3,15C4,13 9,12 11,11C9,10 4,9 3,7C2,5 3,3 5,3C11,3 12,10 12,10Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    animation: butterflyPath 20s ease-in-out infinite;
+}
